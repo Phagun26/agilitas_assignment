@@ -345,67 +345,68 @@ export default function Index() {
 
       {/* Footer */}
       <footer className="bg-ag-dark text-ag-light">
-        <div className="container mx-auto px-4 py-16">
-          <div className="grid grid-cols-1 lg:grid-cols-4 gap-8">
+        <div className="container mx-auto px-4 py-12 sm:py-16">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
             {/* Logo and Description */}
-            <div className="lg:col-span-1">
-              <div className="flex items-center mb-8">
-                <div className="w-4 h-4 bg-ag-lemon-green rounded-full mr-3" />
-                <div className="w-4 h-4 bg-ag-bright-blue rounded-full mr-3" />
-                <div className="w-4 h-4 bg-ag-bright-pink rounded-full mr-3" />
-                <div className="w-4 h-4 bg-orange-500 rounded-full" />
+            <div className="sm:col-span-2 lg:col-span-1">
+              <div className="flex items-center mb-6 sm:mb-8">
+                <div className="w-3 h-3 sm:w-4 sm:h-4 bg-ag-lemon-green rounded-full mr-2 sm:mr-3" />
+                <div className="w-3 h-3 sm:w-4 sm:h-4 bg-ag-bright-blue rounded-full mr-2 sm:mr-3" />
+                <div className="w-3 h-3 sm:w-4 sm:h-4 bg-ag-bright-pink rounded-full mr-2 sm:mr-3" />
+                <div className="w-3 h-3 sm:w-4 sm:h-4 bg-orange-500 rounded-full" />
               </div>
-              <div className="w-[163px] h-[44px] bg-gray-600 mb-8" />
-              <p className="font-ibm text-xl leading-8 mb-8">
+              <div className="w-[120px] sm:w-[163px] h-[32px] sm:h-[44px] bg-gray-600 rounded mb-6 sm:mb-8" />
+              <p className="font-ibm text-lg sm:text-xl leading-7 sm:leading-8 mb-6 sm:mb-8">
                 Comprehensively building the entire value chain from manufacturing to retail
               </p>
-              
+
               <div className="mb-6">
-                <h4 className="font-ibm text-xl text-white mb-4">Follow us</h4>
-                <div className="flex space-x-6">
-                  <Linkedin className="w-6 h-6 hover:text-white transition-colors cursor-pointer" />
-                  <Instagram className="w-6 h-6 hover:text-white transition-colors cursor-pointer" />
-                  <Youtube className="w-6 h-6 hover:text-white transition-colors cursor-pointer" />
+                <h4 className="font-ibm text-lg sm:text-xl text-white mb-4">Follow us</h4>
+                <div className="flex space-x-4 sm:space-x-6">
+                  <Linkedin className="w-5 h-5 sm:w-6 sm:h-6 hover:text-white transition-colors cursor-pointer" />
+                  <Instagram className="w-5 h-5 sm:w-6 sm:h-6 hover:text-white transition-colors cursor-pointer" />
+                  <Youtube className="w-5 h-5 sm:w-6 sm:h-6 hover:text-white transition-colors cursor-pointer" />
                 </div>
               </div>
             </div>
 
-            {/* Links */}
-            <div className="lg:col-span-1">
-              <div className="space-y-4 font-ibm text-xl leading-8">
+            {/* Links Column 1 */}
+            <div>
+              <div className="space-y-3 sm:space-y-4 font-ibm text-lg sm:text-xl leading-7 sm:leading-8">
                 <a href="#" className="block hover:text-white transition-colors">About Us</a>
                 <a href="#" className="block hover:text-white transition-colors">What we do</a>
                 <a href="#" className="block hover:text-white transition-colors">Inside Agilitas</a>
               </div>
             </div>
 
-            <div className="lg:col-span-1">
-              <div className="space-y-4 font-ibm leading-7">
-                <a href="#" className="block text-xl hover:text-white transition-colors">Join the Team</a>
-                <a href="#" className="block text-xl hover:text-white transition-colors">Media</a>
-                <div className="text-lg">
-                  <span className="text-xl">Blogs </span>
-                  <span className="text-lg">(Coming Soon)</span>
+            {/* Links Column 2 */}
+            <div>
+              <div className="space-y-3 sm:space-y-4 font-ibm leading-6 sm:leading-7">
+                <a href="#" className="block text-lg sm:text-xl hover:text-white transition-colors">Join the Team</a>
+                <a href="#" className="block text-lg sm:text-xl hover:text-white transition-colors">Media</a>
+                <div className="text-base sm:text-lg">
+                  <span className="text-lg sm:text-xl">Blogs </span>
+                  <span className="text-base sm:text-lg">(Coming Soon)</span>
                 </div>
               </div>
             </div>
 
             {/* Contact */}
-            <div className="lg:col-span-1">
-              <h4 className="font-space text-xl font-medium text-white mb-6">
+            <div className="sm:col-span-2 lg:col-span-1">
+              <h4 className="font-space text-lg sm:text-xl font-medium text-white mb-4 sm:mb-6">
                 Stay in the Loop. Move with Us.
               </h4>
-              
-              <div className="mb-6">
-                <h5 className="font-ibm text-base font-bold text-white">Email</h5>
-                <a href="mailto:info@agilitas.in" className="font-ibm text-base underline hover:text-white transition-colors">
+
+              <div className="mb-4 sm:mb-6">
+                <h5 className="font-ibm text-sm sm:text-base font-bold text-white">Email</h5>
+                <a href="mailto:info@agilitas.in" className="font-ibm text-sm sm:text-base underline hover:text-white transition-colors">
                   info@agilitas.in
                 </a>
               </div>
 
               <div>
-                <h5 className="font-ibm text-base font-bold text-white mb-2">Corporate address</h5>
-                <address className="font-ibm text-base not-italic leading-6">
+                <h5 className="font-ibm text-sm sm:text-base font-bold text-white mb-2">Corporate address</h5>
+                <address className="font-ibm text-sm sm:text-base not-italic leading-5 sm:leading-6">
                   Roshini Tech Hub,<br />
                   PFS Club House,<br />
                   Marathahalli Main Rd,<br />
@@ -420,10 +421,10 @@ export default function Index() {
         </div>
 
         {/* Copyright */}
-        <div className="bg-white py-6">
+        <div className="bg-white py-4 sm:py-6">
           <div className="container mx-auto px-4">
-            <p className="font-ibm text-xl text-black">
-              © 2025 Agilitas All rights reserved. 
+            <p className="font-ibm text-lg sm:text-xl text-black text-center sm:text-left">
+              © 2025 Agilitas All rights reserved.
               <a href="#" className="underline hover:text-gray-600 transition-colors ml-1">Terms of Use</a>
               <span className="mx-2">|</span>
               <a href="#" className="underline hover:text-gray-600 transition-colors">Privacy Policy</a>
