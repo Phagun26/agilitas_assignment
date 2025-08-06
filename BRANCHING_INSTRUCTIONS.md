@@ -1,11 +1,13 @@
 # Branching Instructions
 
 ## Current State
+
 The codebase now contains a mobile-optimized version of the Agilitas website that matches the mobile Figma design.
 
 ## To Create Branches as Requested:
 
 ### 1. Create Mobile View Branch
+
 ```bash
 # Create and switch to mobile view branch
 git checkout -b mobile-view
@@ -15,6 +17,7 @@ git checkout -b mobile-view
 ```
 
 ### 2. Create Browser View Branch
+
 ```bash
 # Go back to main branch
 git checkout main
@@ -33,6 +36,7 @@ git checkout -b browser-view
 ## Key Differences Between Branches:
 
 ### Mobile View Branch (Current):
+
 - ✅ 375px max-width container
 - ✅ Glass navigation card with mobile menu icon
 - ✅ Stacked layout for all sections
@@ -42,6 +46,7 @@ git checkout -b browser-view
 - ✅ Vertical product grid layout
 
 ### Browser View Branch (Needed):
+
 - 🔄 Full-width responsive design
 - 🔄 Horizontal navigation with full menu
 - 🔄 Multi-column layouts for larger screens
@@ -50,11 +55,13 @@ git checkout -b browser-view
 - 🔄 Grid layouts with side-by-side content
 
 ## Files Modified for Mobile View:
+
 - `client/pages/Index.tsx` - Complete mobile redesign
 - `client/global.css` - Already had proper brand colors
 - `tailwind.config.ts` - Already had proper font configurations
 
 ## Next Steps:
+
 1. Use git commands shown above to create the branches
 2. Keep current mobile code in `mobile-view` branch
 3. Restore original desktop code to `browser-view` branch
