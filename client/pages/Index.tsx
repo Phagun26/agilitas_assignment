@@ -165,39 +165,39 @@ export default function Index() {
       </section>
 
       {/* Agilitas Section */}
-      <section className="py-16">
+      <section className="py-16 relative">
         <div className="container mx-auto px-4">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-stretch">
             {/* Left Text */}
-            <div className="bg-ag-dark text-ag-light p-8 lg:p-20 min-h-[552px] flex items-center">
+            <div className="bg-ag-dark text-ag-light p-6 sm:p-8 lg:p-20 min-h-[400px] sm:min-h-[552px] flex items-center rounded-lg lg:rounded-none">
               <div>
-                <p className="font-space text-3xl lg:text-[36px] font-semibold leading-[44px] tracking-[-0.09px]">
+                <p className="font-space text-2xl sm:text-3xl lg:text-[36px] font-semibold leading-tight sm:leading-[44px] tracking-[-0.09px]">
                   Agilitas is turning up the volume on Lotto's presence and creating momentum across markets. In India, it's not just part of the conversation—it's writing the whole playbook.
                 </p>
               </div>
             </div>
 
             {/* Right Images Grid */}
-            <div className="grid grid-cols-2 gap-4 h-[552px]">
-              <div className="grid grid-rows-2 gap-4">
-                <img 
+            <div className="grid grid-cols-2 gap-2 sm:gap-4 h-[400px] sm:h-[552px]">
+              <div className="grid grid-rows-2 gap-2 sm:gap-4">
+                <img
                   src="https://api.builder.io/api/v1/image/assets/TEMP/e98a29168d82803962df3fbb9191e4c8179a3f46?width=742"
                   alt="Product shot 1"
                   className="w-full h-full object-cover rounded"
                 />
-                <img 
+                <img
                   src="https://api.builder.io/api/v1/image/assets/TEMP/1bb4f0cdeb88645e82d0b205a8558b900341a58a?width=1204"
                   alt="Product shot 2"
                   className="w-full h-full object-cover rounded"
                 />
               </div>
-              <div className="grid grid-rows-2 gap-4">
-                <img 
+              <div className="grid grid-rows-2 gap-2 sm:gap-4">
+                <img
                   src="https://api.builder.io/api/v1/image/assets/TEMP/d4990cb0227b593a99ba4a243e851cdfd22ea036?width=1046"
                   alt="Product shot 3"
                   className="w-full h-full object-cover rounded"
                 />
-                <img 
+                <img
                   src="https://api.builder.io/api/v1/image/assets/TEMP/25bba6c08847bddd2a10a1828a1051c58f9c2224?width=750"
                   alt="Product shot 4"
                   className="w-full h-full object-cover rounded"
@@ -208,9 +208,9 @@ export default function Index() {
         </div>
 
         {/* Blue decorative line */}
-        <svg 
-          className="absolute left-10 mt-16 w-[106px] h-[421px]"
-          viewBox="0 0 106 421" 
+        <svg
+          className="absolute left-4 sm:left-10 top-1/2 transform -translate-y-1/2 w-[80px] sm:w-[106px] h-[300px] sm:h-[421px] hidden lg:block"
+          viewBox="0 0 106 421"
           fill="none"
         >
           <path d="M1 1L105 140.513V420.487" stroke="#1D1BFB" strokeWidth="2"/>
