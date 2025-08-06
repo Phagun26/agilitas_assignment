@@ -51,8 +51,8 @@ export default function Index() {
           {/* Hero Content */}
           <div className="absolute bottom-0 left-0 right-0">
             {/* Shadow overlay for text */}
-            <div className="relative z-10 px-4 sm:px-8 lg:px-[382px] pb-[120px]">
-              <h1 className="text-ag-light font-space text-5xl sm:text-6xl lg:text-[64px] font-bold leading-[70px] text-right tracking-[-0.64px]">
+            <div className="relative z-10 px-4 sm:px-8 lg:px-[382px] pb-[60px] sm:pb-[120px]">
+              <h1 className="text-ag-light font-space text-4xl sm:text-5xl md:text-6xl lg:text-[64px] font-bold leading-tight sm:leading-[70px] text-center sm:text-right tracking-[-0.64px] drop-shadow-lg">
                 A Whole Lotto Joy
               </h1>
             </div>
