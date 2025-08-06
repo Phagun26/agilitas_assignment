@@ -13,7 +13,21 @@ export default {
       },
     },
     extend: {
+      fontFamily: {
+        'space': ['Space Grotesk', 'sans-serif'],
+        'ibm': ['IBM Plex Sans', 'sans-serif'],
+        sans: ['Space Grotesk', 'IBM Plex Sans', 'system-ui', 'sans-serif'],
+      },
       colors: {
+        // Agilitas brand colors
+        'ag-dark': 'hsl(var(--ag-dark))',
+        'ag-light': 'hsl(var(--ag-light))',
+        'ag-dark-teal': 'hsl(var(--ag-dark-teal))',
+        'ag-bright-blue': 'hsl(var(--ag-bright-blue))',
+        'ag-bright-pink': 'hsl(var(--ag-bright-pink))',
+        'ag-lemon-green': 'hsl(var(--ag-lemon-green))',
+
+        // Core theme colors
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",
@@ -46,16 +60,6 @@ export default {
         card: {
           DEFAULT: "hsl(var(--card))",
           foreground: "hsl(var(--card-foreground))",
-        },
-        sidebar: {
-          DEFAULT: "hsl(var(--sidebar-background))",
-          foreground: "hsl(var(--sidebar-foreground))",
-          primary: "hsl(var(--sidebar-primary))",
-          "primary-foreground": "hsl(var(--sidebar-primary-foreground))",
-          accent: "hsl(var(--sidebar-accent))",
-          "accent-foreground": "hsl(var(--sidebar-accent-foreground))",
-          border: "hsl(var(--sidebar-border))",
-          ring: "hsl(var(--sidebar-ring))",
         },
       },
       borderRadius: {
