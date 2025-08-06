@@ -77,9 +77,9 @@ export default function Index() {
           </div>
 
           {/* Pink decorative line */}
-          <svg 
-            className="absolute right-[128px] top-[791px] w-[129px] h-[492px]"
-            viewBox="0 0 129 492" 
+          <svg
+            className="absolute right-4 sm:right-[128px] top-[400px] sm:top-[791px] w-[80px] sm:w-[129px] h-[300px] sm:h-[492px] hidden md:block"
+            viewBox="0 0 129 492"
             fill="none"
           >
             <path d="M128 1L1 114.367V316.094V492" stroke="#FF004F" strokeWidth="2"/>
@@ -412,7 +412,7 @@ export default function Index() {
                   Lakshminarayana Pura,<br />
                   EPIP Zone, Chinnapanna Halli,<br />
                   Bengaluru, Karnataka 560037<br /><br />
-                  🧭 <a href="#" className="underline hover:text-white transition-colors">Get directions</a>
+                  ���� <a href="#" className="underline hover:text-white transition-colors">Get directions</a>
                 </address>
               </div>
             </div>
