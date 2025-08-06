@@ -14,18 +14,18 @@ export default {
     },
     extend: {
       fontFamily: {
-        'space': ['Space Grotesk', 'sans-serif'],
-        'ibm': ['IBM Plex Sans', 'sans-serif'],
-        sans: ['Space Grotesk', 'IBM Plex Sans', 'system-ui', 'sans-serif'],
+        space: ["Space Grotesk", "sans-serif"],
+        ibm: ["IBM Plex Sans", "sans-serif"],
+        sans: ["Space Grotesk", "IBM Plex Sans", "system-ui", "sans-serif"],
       },
       colors: {
         // Agilitas brand colors
-        'ag-dark': 'hsl(var(--ag-dark))',
-        'ag-light': 'hsl(var(--ag-light))',
-        'ag-dark-teal': 'hsl(var(--ag-dark-teal))',
-        'ag-bright-blue': 'hsl(var(--ag-bright-blue))',
-        'ag-bright-pink': 'hsl(var(--ag-bright-pink))',
-        'ag-lemon-green': 'hsl(var(--ag-lemon-green))',
+        "ag-dark": "hsl(var(--ag-dark))",
+        "ag-light": "hsl(var(--ag-light))",
+        "ag-dark-teal": "hsl(var(--ag-dark-teal))",
+        "ag-bright-blue": "hsl(var(--ag-bright-blue))",
+        "ag-bright-pink": "hsl(var(--ag-bright-pink))",
+        "ag-lemon-green": "hsl(var(--ag-lemon-green))",
 
         // Core theme colors
         border: "hsl(var(--border))",

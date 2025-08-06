@@ -1,4 +1,10 @@
-import { ChevronDown, Instagram, Linkedin, Youtube, ExternalLink } from 'lucide-react';
+import {
+  ChevronDown,
+  Instagram,
+  Linkedin,
+  Youtube,
+  ExternalLink,
+} from "lucide-react";
 
 export default function Index() {
   return (
@@ -6,20 +12,20 @@ export default function Index() {
       {/* Navigation Header */}
       <header className="relative">
         {/* Hero background image */}
-        <div 
+        <div
           className="relative h-[699px] bg-cover bg-center bg-no-repeat"
           style={{
-            backgroundImage: `url(https://api.builder.io/api/v1/image/assets/TEMP/c9cff0d775057676465b750070f64daf01615d6c?width=2880)`
+            backgroundImage: `url(https://api.builder.io/api/v1/image/assets/TEMP/c9cff0d775057676465b750070f64daf01615d6c?width=2880)`,
           }}
         >
           {/* Gradient overlay */}
           <div className="absolute inset-0 bg-gradient-to-b from-black/40 via-transparent to-transparent" />
-          
+
           {/* Navigation */}
           <nav className="relative z-10 flex items-center justify-between px-4 sm:px-8 lg:px-[189px] pt-6">
             {/* Logo */}
             <div className="flex items-center">
-              <img 
+              <img
                 src="https://api.builder.io/api/v1/image/assets/TEMP/8d2f8c109be081342057899cba56d101a3d7fb0c?width=316"
                 alt="Agilitas Logo"
                 className="h-[52px] w-[158px]"
@@ -28,24 +34,37 @@ export default function Index() {
             </div>
 
             {/* Navigation Links */}
-          <div className="hidden lg:flex items-center space-x-8 text-ag-light font-space text-xl">
-            <a href="#" className="hover:text-white transition-colors">About us</a>
-            <div className="flex items-center space-x-1">
-              <a href="#" className="font-bold hover:text-white transition-colors">What we do</a>
-              <ChevronDown className="w-3 h-3" />
-              <div className="w-[30px] h-1 bg-ag-lemon-green transform skew-x-12" />
+            <div className="hidden lg:flex items-center space-x-8 text-ag-light font-space text-xl">
+              <a href="#" className="hover:text-white transition-colors">
+                About us
+              </a>
+              <div className="flex items-center space-x-1">
+                <a
+                  href="#"
+                  className="font-bold hover:text-white transition-colors"
+                >
+                  What we do
+                </a>
+                <ChevronDown className="w-3 h-3" />
+                <div className="w-[30px] h-1 bg-ag-lemon-green transform skew-x-12" />
+              </div>
+              <a href="#" className="hover:text-white transition-colors">
+                Inside Agilitas
+              </a>
+              <a href="#" className="hover:text-white transition-colors">
+                Join the team
+              </a>
+              <a href="#" className="hover:text-white transition-colors">
+                Media
+              </a>
             </div>
-            <a href="#" className="hover:text-white transition-colors">Inside Agilitas</a>
-            <a href="#" className="hover:text-white transition-colors">Join the team</a>
-            <a href="#" className="hover:text-white transition-colors">Media</a>
-          </div>
 
-          {/* Mobile Menu Button */}
-          <button className="lg:hidden text-ag-light p-2">
-            <div className="w-6 h-0.5 bg-ag-light mb-1"></div>
-            <div className="w-6 h-0.5 bg-ag-light mb-1"></div>
-            <div className="w-6 h-0.5 bg-ag-light"></div>
-          </button>
+            {/* Mobile Menu Button */}
+            <button className="lg:hidden text-ag-light p-2">
+              <div className="w-6 h-0.5 bg-ag-light mb-1"></div>
+              <div className="w-6 h-0.5 bg-ag-light mb-1"></div>
+              <div className="w-6 h-0.5 bg-ag-light"></div>
+            </button>
           </nav>
 
           {/* Hero Content */}
@@ -56,21 +75,21 @@ export default function Index() {
                 A Whole Lotto Joy
               </h1>
             </div>
-            
+
             {/* Decorative shapes */}
             <div className="absolute bottom-0 left-0 right-0 hidden sm:block">
               {/* Dark teal shape */}
               <div
                 className="absolute bottom-0 left-[20%] right-[12%] h-[120px] sm:h-[190px] bg-ag-dark-teal"
                 style={{
-                  clipPath: 'polygon(8.8% 0%, 100% 0%, 100% 100%, 0% 100%)'
+                  clipPath: "polygon(8.8% 0%, 100% 0%, 100% 100%, 0% 100%)",
                 }}
               />
               {/* Blue shape */}
               <div
                 className="absolute bottom-0 right-0 w-[120px] sm:w-[169px] h-[120px] sm:h-[190px] bg-ag-bright-blue"
                 style={{
-                  clipPath: 'polygon(76.5% 0%, 100% 0%, 100% 100%, 0% 100%)'
+                  clipPath: "polygon(76.5% 0%, 100% 0%, 100% 100%, 0% 100%)",
                 }}
               />
             </div>
@@ -82,7 +101,11 @@ export default function Index() {
             viewBox="0 0 129 492"
             fill="none"
           >
-            <path d="M128 1L1 114.367V316.094V492" stroke="#FF004F" strokeWidth="2"/>
+            <path
+              d="M128 1L1 114.367V316.094V492"
+              stroke="#FF004F"
+              strokeWidth="2"
+            />
           </svg>
         </div>
 
@@ -90,7 +113,8 @@ export default function Index() {
         <div className="relative bg-gradient-to-r from-ag-dark-teal to-ag-bright-blue">
           <div className="container mx-auto px-4 sm:px-8 py-8 lg:py-12">
             <p className="text-ag-light font-space text-xl sm:text-2xl lg:text-[28px] leading-8 sm:leading-9 text-center max-w-[853px] mx-auto">
-              Lotto is stepping into its new era with Agilitas as its compass. A journey that is familiar, reborn with a new purpose.
+              Lotto is stepping into its new era with Agilitas as its compass. A
+              journey that is familiar, reborn with a new purpose.
             </p>
           </div>
         </div>
@@ -123,7 +147,9 @@ export default function Index() {
                 <h3 className="font-space text-xl sm:text-2xl lg:text-[28px] font-bold leading-8 sm:leading-9 text-white mb-2 drop-shadow-lg">
                   Sport & Swagger
                 </h3>
-                <p className="font-ibm text-base sm:text-lg text-white drop-shadow-lg">Function first, fashion-always.</p>
+                <p className="font-ibm text-base sm:text-lg text-white drop-shadow-lg">
+                  Function first, fashion-always.
+                </p>
               </div>
             </div>
 
@@ -139,7 +165,8 @@ export default function Index() {
                   Culture in Motion
                 </h3>
                 <p className="font-ibm text-base sm:text-lg text-white max-w-[292px] drop-shadow-lg">
-                  Rewriting culture through rhythm, rebellion and raw expression.
+                  Rewriting culture through rhythm, rebellion and raw
+                  expression.
                 </p>
               </div>
             </div>
@@ -172,7 +199,9 @@ export default function Index() {
             <div className="bg-ag-dark text-ag-light p-6 sm:p-8 lg:p-20 min-h-[400px] sm:min-h-[552px] flex items-center rounded-lg lg:rounded-none">
               <div>
                 <p className="font-space text-2xl sm:text-3xl lg:text-[36px] font-semibold leading-tight sm:leading-[44px] tracking-[-0.09px]">
-                  Agilitas is turning up the volume on Lotto's presence and creating momentum across markets. In India, it's not just part of the conversation—it's writing the whole playbook.
+                  Agilitas is turning up the volume on Lotto's presence and
+                  creating momentum across markets. In India, it's not just part
+                  of the conversation—it's writing the whole playbook.
                 </p>
               </div>
             </div>
@@ -213,7 +242,7 @@ export default function Index() {
           viewBox="0 0 106 421"
           fill="none"
         >
-          <path d="M1 1L105 140.513V420.487" stroke="#1D1BFB" strokeWidth="2"/>
+          <path d="M1 1L105 140.513V420.487" stroke="#1D1BFB" strokeWidth="2" />
         </svg>
       </section>
 
@@ -227,31 +256,36 @@ export default function Index() {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-[1273px] mx-auto">
             {/* Run Club Meetup */}
             <div className="relative rounded-lg overflow-hidden">
-              <img 
+              <img
                 src="https://api.builder.io/api/v1/image/assets/TEMP/edab1ada03056855d3a19b31cc10858856ae3bdf?width=1050"
                 alt="Run Club Meetup"
                 className="w-full h-[342px] object-cover"
               />
               <div className="absolute bottom-0 left-0 right-0 bg-black/50 backdrop-blur-sm p-6">
                 <h3 className="font-space text-2xl lg:text-[28px] font-medium leading-9 text-ag-light mb-2">
-                  Run Club Meetup<br />Jun 25, 10 am
+                  Run Club Meetup
+                  <br />
+                  Jun 25, 10 am
                 </h3>
                 <p className="font-ibm text-base text-ag-light">
-                  Join local runners for a 5K, gear trials, and post-run smoothies.
+                  Join local runners for a 5K, gear trials, and post-run
+                  smoothies.
                 </p>
               </div>
             </div>
 
             {/* Custom Kicks Day */}
             <div className="relative rounded-lg overflow-hidden">
-              <img 
+              <img
                 src="https://api.builder.io/api/v1/image/assets/TEMP/0b45a122228d1dc18a80277009fff8cf7f00f0ee?width=1026"
                 alt="Custom Kicks Day"
                 className="w-full h-[342px] object-cover"
               />
               <div className="absolute bottom-0 left-0 right-0 bg-black/50 backdrop-blur-sm p-6">
                 <h3 className="font-space text-2xl lg:text-[28px] font-medium leading-9 text-ag-light mb-2">
-                  Custom Kicks Day<br />Jun 26, 6 PM
+                  Custom Kicks Day
+                  <br />
+                  Jun 26, 6 PM
                 </h3>
                 <p className="font-ibm text-base text-ag-light">
                   Design your pair. Add your name. Walk out with a one-of-one.
@@ -261,17 +295,20 @@ export default function Index() {
 
             {/* Football Weekend */}
             <div className="relative rounded-lg overflow-hidden">
-              <img 
+              <img
                 src="https://api.builder.io/api/v1/image/assets/TEMP/2e80d2d46be1527cfa1e0b9e87b9da0481a84209?width=1044"
                 alt="Football Weekend"
                 className="w-full h-[342px] object-cover"
               />
               <div className="absolute bottom-0 left-0 right-0 bg-black/50 backdrop-blur-sm p-6">
                 <h3 className="font-space text-2xl lg:text-[28px] font-medium leading-9 text-ag-light mb-2">
-                  Football Weekend<br />Jun 28-29, 11 am
+                  Football Weekend
+                  <br />
+                  Jun 28-29, 11 am
                 </h3>
                 <p className="font-ibm text-base text-ag-light">
-                  Join us for skill challenges, mini matches, & the launch of our latest turf-ready kicks.
+                  Join us for skill challenges, mini matches, & the launch of
+                  our latest turf-ready kicks.
                 </p>
               </div>
             </div>
@@ -293,7 +330,7 @@ export default function Index() {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 max-w-[1274px] mx-auto px-4">
           {/* Discover Where You Fit In */}
           <div className="relative rounded-lg overflow-hidden h-[368px]">
-            <img 
+            <img
               src="https://api.builder.io/api/v1/image/assets/TEMP/6881eaa8762a9d8272a2fae84e10c0604be8e6d2?width=1256"
               alt="Discover where you fit in"
               className="w-full h-full object-cover"
@@ -309,7 +346,7 @@ export default function Index() {
 
           {/* Vibe with Creators */}
           <div className="relative rounded-lg overflow-hidden h-[368px]">
-            <img 
+            <img
               src="https://api.builder.io/api/v1/image/assets/TEMP/7bbe65601a68232330f5289de77d16f35ad462e8?width=1322"
               alt="Vibe with creators who get it"
               className="w-full h-full object-cover"
@@ -331,7 +368,7 @@ export default function Index() {
           <h2 className="font-space text-4xl lg:text-[36px] font-semibold leading-[44px] tracking-[-0.09px] text-ag-bright-pink mb-4">
             Explore Lotto
           </h2>
-          <a 
+          <a
             href="https://www.lottosport.in"
             target="_blank"
             rel="noopener noreferrer"
@@ -357,11 +394,14 @@ export default function Index() {
               </div>
               <div className="w-[120px] sm:w-[163px] h-[32px] sm:h-[44px] bg-gray-600 rounded mb-6 sm:mb-8" />
               <p className="font-ibm text-lg sm:text-xl leading-7 sm:leading-8 mb-6 sm:mb-8">
-                Comprehensively building the entire value chain from manufacturing to retail
+                Comprehensively building the entire value chain from
+                manufacturing to retail
               </p>
 
               <div className="mb-6">
-                <h4 className="font-ibm text-lg sm:text-xl text-white mb-4">Follow us</h4>
+                <h4 className="font-ibm text-lg sm:text-xl text-white mb-4">
+                  Follow us
+                </h4>
                 <div className="flex space-x-4 sm:space-x-6">
                   <Linkedin className="w-5 h-5 sm:w-6 sm:h-6 hover:text-white transition-colors cursor-pointer" />
                   <Instagram className="w-5 h-5 sm:w-6 sm:h-6 hover:text-white transition-colors cursor-pointer" />
@@ -373,17 +413,42 @@ export default function Index() {
             {/* Links Column 1 */}
             <div>
               <div className="space-y-3 sm:space-y-4 font-ibm text-lg sm:text-xl leading-7 sm:leading-8">
-                <a href="#" className="block hover:text-white transition-colors">About Us</a>
-                <a href="#" className="block hover:text-white transition-colors">What we do</a>
-                <a href="#" className="block hover:text-white transition-colors">Inside Agilitas</a>
+                <a
+                  href="#"
+                  className="block hover:text-white transition-colors"
+                >
+                  About Us
+                </a>
+                <a
+                  href="#"
+                  className="block hover:text-white transition-colors"
+                >
+                  What we do
+                </a>
+                <a
+                  href="#"
+                  className="block hover:text-white transition-colors"
+                >
+                  Inside Agilitas
+                </a>
               </div>
             </div>
 
             {/* Links Column 2 */}
             <div>
               <div className="space-y-3 sm:space-y-4 font-ibm leading-6 sm:leading-7">
-                <a href="#" className="block text-lg sm:text-xl hover:text-white transition-colors">Join the Team</a>
-                <a href="#" className="block text-lg sm:text-xl hover:text-white transition-colors">Media</a>
+                <a
+                  href="#"
+                  className="block text-lg sm:text-xl hover:text-white transition-colors"
+                >
+                  Join the Team
+                </a>
+                <a
+                  href="#"
+                  className="block text-lg sm:text-xl hover:text-white transition-colors"
+                >
+                  Media
+                </a>
                 <div className="text-base sm:text-lg">
                   <span className="text-lg sm:text-xl">Blogs </span>
                   <span className="text-base sm:text-lg">(Coming Soon)</span>
@@ -398,22 +463,42 @@ export default function Index() {
               </h4>
 
               <div className="mb-4 sm:mb-6">
-                <h5 className="font-ibm text-sm sm:text-base font-bold text-white">Email</h5>
-                <a href="mailto:info@agilitas.in" className="font-ibm text-sm sm:text-base underline hover:text-white transition-colors">
+                <h5 className="font-ibm text-sm sm:text-base font-bold text-white">
+                  Email
+                </h5>
+                <a
+                  href="mailto:info@agilitas.in"
+                  className="font-ibm text-sm sm:text-base underline hover:text-white transition-colors"
+                >
                   info@agilitas.in
                 </a>
               </div>
 
               <div>
-                <h5 className="font-ibm text-sm sm:text-base font-bold text-white mb-2">Corporate address</h5>
+                <h5 className="font-ibm text-sm sm:text-base font-bold text-white mb-2">
+                  Corporate address
+                </h5>
                 <address className="font-ibm text-sm sm:text-base not-italic leading-5 sm:leading-6">
-                  Roshini Tech Hub,<br />
-                  PFS Club House,<br />
-                  Marathahalli Main Rd,<br />
-                  Lakshminarayana Pura,<br />
-                  EPIP Zone, Chinnapanna Halli,<br />
-                  Bengaluru, Karnataka 560037<br /><br />
-                  🧭 <a href="#" className="underline hover:text-white transition-colors">Get directions</a>
+                  Roshini Tech Hub,
+                  <br />
+                  PFS Club House,
+                  <br />
+                  Marathahalli Main Rd,
+                  <br />
+                  Lakshminarayana Pura,
+                  <br />
+                  EPIP Zone, Chinnapanna Halli,
+                  <br />
+                  Bengaluru, Karnataka 560037
+                  <br />
+                  <br />
+                  🧭{" "}
+                  <a
+                    href="#"
+                    className="underline hover:text-white transition-colors"
+                  >
+                    Get directions
+                  </a>
                 </address>
               </div>
             </div>
@@ -425,9 +510,19 @@ export default function Index() {
           <div className="container mx-auto px-4">
             <p className="font-ibm text-lg sm:text-xl text-black text-center sm:text-left">
               © 2025 Agilitas All rights reserved.
-              <a href="#" className="underline hover:text-gray-600 transition-colors ml-1">Terms of Use</a>
+              <a
+                href="#"
+                className="underline hover:text-gray-600 transition-colors ml-1"
+              >
+                Terms of Use
+              </a>
               <span className="mx-2">|</span>
-              <a href="#" className="underline hover:text-gray-600 transition-colors">Privacy Policy</a>
+              <a
+                href="#"
+                className="underline hover:text-gray-600 transition-colors"
+              >
+                Privacy Policy
+              </a>
             </p>
           </div>
         </div>
