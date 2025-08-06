@@ -58,17 +58,17 @@ export default function Index() {
             </div>
             
             {/* Decorative shapes */}
-            <div className="absolute bottom-0 left-0 right-0">
+            <div className="absolute bottom-0 left-0 right-0 hidden sm:block">
               {/* Dark teal shape */}
-              <div 
-                className="absolute bottom-0 left-[303px] right-[90px] h-[190px] bg-ag-dark-teal"
+              <div
+                className="absolute bottom-0 left-[20%] right-[12%] h-[120px] sm:h-[190px] bg-ag-dark-teal"
                 style={{
                   clipPath: 'polygon(8.8% 0%, 100% 0%, 100% 100%, 0% 100%)'
                 }}
               />
               {/* Blue shape */}
-              <div 
-                className="absolute bottom-0 right-0 w-[169px] h-[190px] bg-ag-bright-blue"
+              <div
+                className="absolute bottom-0 right-0 w-[120px] sm:w-[169px] h-[120px] sm:h-[190px] bg-ag-bright-blue"
                 style={{
                   clipPath: 'polygon(76.5% 0%, 100% 0%, 100% 100%, 0% 100%)'
                 }}
