@@ -111,51 +111,51 @@ export default function Index() {
       {/* Three Columns Section */}
       <section className="py-16">
         <div className="container mx-auto px-4">
-          <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 max-w-[1217px] mx-auto">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-[1217px] mx-auto">
             {/* Left Image */}
-            <div className="relative h-[453px] rounded-lg overflow-hidden">
-              <img 
+            <div className="relative h-[400px] sm:h-[453px] rounded-lg overflow-hidden group">
+              <img
                 src="https://api.builder.io/api/v1/image/assets/TEMP/45e45ee1f3822e0f1cc2a822331e3be0b8ad37aa?width=846"
                 alt="Sport athlete"
-                className="w-full h-full object-cover"
+                className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
               />
-              <div className="absolute bottom-6 left-1/2 transform -translate-x-1/2 text-center">
-                <h3 className="font-space text-2xl lg:text-[28px] font-bold leading-9 text-black mb-2">
+              <div className="absolute bottom-6 left-1/2 transform -translate-x-1/2 text-center px-4">
+                <h3 className="font-space text-xl sm:text-2xl lg:text-[28px] font-bold leading-8 sm:leading-9 text-white mb-2 drop-shadow-lg">
                   Sport & Swagger
                 </h3>
-                <p className="font-ibm text-lg text-black">Function first, fashion-always.</p>
+                <p className="font-ibm text-base sm:text-lg text-white drop-shadow-lg">Function first, fashion-always.</p>
               </div>
             </div>
 
             {/* Center Image */}
-            <div className="relative h-[453px] rounded-lg overflow-hidden">
-              <img 
+            <div className="relative h-[400px] sm:h-[453px] rounded-lg overflow-hidden group md:col-span-2 lg:col-span-1">
+              <img
                 src="https://api.builder.io/api/v1/image/assets/TEMP/c328e747986a4a02d2301076346bcdba7b8f2e21?width=862"
                 alt="Culture in motion"
-                className="w-full h-full object-cover"
+                className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
               />
-              <div className="absolute bottom-6 left-1/2 transform -translate-x-1/2 text-center">
-                <h3 className="font-space text-2xl lg:text-[28px] font-bold leading-9 text-black mb-2">
+              <div className="absolute bottom-6 left-1/2 transform -translate-x-1/2 text-center px-4">
+                <h3 className="font-space text-xl sm:text-2xl lg:text-[28px] font-bold leading-8 sm:leading-9 text-white mb-2 drop-shadow-lg">
                   Culture in Motion
                 </h3>
-                <p className="font-ibm text-lg text-black max-w-[292px]">
+                <p className="font-ibm text-base sm:text-lg text-white max-w-[292px] drop-shadow-lg">
                   Rewriting culture through rhythm, rebellion and raw expression.
                 </p>
               </div>
             </div>
 
             {/* Right Image */}
-            <div className="relative h-[453px] rounded-lg overflow-hidden">
-              <img 
+            <div className="relative h-[400px] sm:h-[453px] rounded-lg overflow-hidden group md:col-span-2 lg:col-span-1">
+              <img
                 src="https://api.builder.io/api/v1/image/assets/TEMP/fcb8c6e6cfef44d80378eb78739130b99a4a4cdc?width=864"
                 alt="Live in motion"
-                className="w-full h-full object-cover"
+                className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
               />
-              <div className="absolute bottom-6 left-1/2 transform -translate-x-1/2 text-center">
-                <h3 className="font-space text-2xl lg:text-[28px] font-bold leading-9 text-black mb-2">
+              <div className="absolute bottom-6 left-1/2 transform -translate-x-1/2 text-center px-4">
+                <h3 className="font-space text-xl sm:text-2xl lg:text-[28px] font-bold leading-8 sm:leading-9 text-white mb-2 drop-shadow-lg">
                   Live in Motion
                 </h3>
-                <p className="font-ibm text-lg text-black max-w-[264px]">
+                <p className="font-ibm text-base sm:text-lg text-white max-w-[264px] drop-shadow-lg">
                   Made to move in all the ways that feel like you.
                 </p>
               </div>
