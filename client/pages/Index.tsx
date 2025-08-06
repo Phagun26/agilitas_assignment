@@ -10,35 +10,35 @@ import { motion } from "framer-motion";
 const fadeInUp = {
   initial: { opacity: 0, y: 50 },
   animate: { opacity: 1, y: 0 },
-  transition: { duration: 0.6, ease: "easeOut" }
+  transition: { duration: 0.6, ease: "easeOut" },
 };
 
 const fadeInLeft = {
   initial: { opacity: 0, x: -50 },
   animate: { opacity: 1, x: 0 },
-  transition: { duration: 0.6, ease: "easeOut" }
+  transition: { duration: 0.6, ease: "easeOut" },
 };
 
 const fadeInRight = {
   initial: { opacity: 0, x: 50 },
   animate: { opacity: 1, x: 0 },
-  transition: { duration: 0.6, ease: "easeOut" }
+  transition: { duration: 0.6, ease: "easeOut" },
 };
 
 const staggerContainer = {
   animate: {
     transition: {
-      staggerChildren: 0.2
-    }
-  }
+      staggerChildren: 0.2,
+    },
+  },
 };
 
 const scaleOnHover = {
-  whileHover: { 
+  whileHover: {
     scale: 1.05,
-    transition: { duration: 0.3 }
+    transition: { duration: 0.3 },
   },
-  whileTap: { scale: 0.95 }
+  whileTap: { scale: 0.95 },
 };
 
 export default function Index() {
@@ -47,7 +47,7 @@ export default function Index() {
       {/* Navigation Header - Responsive */}
       <header className="relative">
         {/* Mobile Navigation Card */}
-        <motion.div 
+        <motion.div
           className="absolute top-0 left-0 right-0 z-20 px-4 pt-3 lg:hidden"
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
@@ -55,7 +55,7 @@ export default function Index() {
         >
           <div className="bg-black/95 backdrop-blur-[20px] rounded-lg p-4 border border-white/10">
             <div className="flex items-center justify-between">
-              <motion.div 
+              <motion.div
                 className="flex items-center"
                 whileHover={{ scale: 1.05 }}
               >
@@ -64,27 +64,27 @@ export default function Index() {
                   alt="Agilitas Logo"
                   className="h-[38px] w-[116px]"
                 />
-                <motion.div 
+                <motion.div
                   className="w-1 h-1 bg-ag-lemon-green rounded-full ml-2"
                   animate={{ scale: [1, 1.2, 1] }}
                   transition={{ duration: 2, repeat: Infinity }}
                 />
               </motion.div>
 
-              <motion.div 
+              <motion.div
                 className="space-y-1 cursor-pointer"
                 whileHover={{ scale: 1.1 }}
                 whileTap={{ scale: 0.9 }}
               >
-                <motion.div 
+                <motion.div
                   className="w-7 h-0.5 bg-ag-light"
                   whileHover={{ scaleX: 1.2 }}
                 />
-                <motion.div 
+                <motion.div
                   className="w-6 h-0.5 bg-ag-light"
                   whileHover={{ scaleX: 1.2 }}
                 />
-                <motion.div 
+                <motion.div
                   className="w-7 h-0.5 bg-ag-light"
                   whileHover={{ scaleX: 1.2 }}
                 />
@@ -187,7 +187,11 @@ export default function Index() {
             className="absolute inset-0 w-full h-full object-cover scale-105 lg:hidden"
             initial={{ scale: 1.1 }}
             animate={{ scale: 1.05 }}
-            transition={{ duration: 20, repeat: Infinity, repeatType: "reverse" }}
+            transition={{
+              duration: 20,
+              repeat: Infinity,
+              repeatType: "reverse",
+            }}
           />
           <motion.img
             src="https://api.builder.io/api/v1/image/assets/TEMP/c9cff0d775057676465b750070f64daf01615d6c?width=2880"
@@ -195,7 +199,11 @@ export default function Index() {
             className="hidden lg:block absolute inset-0 w-full h-full object-cover"
             initial={{ scale: 1.1 }}
             animate={{ scale: 1 }}
-            transition={{ duration: 20, repeat: Infinity, repeatType: "reverse" }}
+            transition={{
+              duration: 20,
+              repeat: Infinity,
+              repeatType: "reverse",
+            }}
           />
           <motion.img
             src="https://api.builder.io/api/v1/image/assets/TEMP/ea73ac6042407479c86f499dcf131a3cd26ed62c?width=1384"
@@ -208,7 +216,7 @@ export default function Index() {
 
           {/* Shadow overlays */}
           <div className="absolute inset-0 bg-gradient-to-b from-black/40 via-transparent to-transparent" />
-          <motion.div 
+          <motion.div
             className="absolute left-4 right-4 bottom-16 h-[115px] bg-ag-dark/20 backdrop-blur-[40px] rounded-lg lg:hidden"
             initial={{ opacity: 0, y: 50 }}
             animate={{ opacity: 1, y: 0 }}
@@ -216,13 +224,13 @@ export default function Index() {
           />
 
           {/* Hero Title */}
-          <motion.div 
+          <motion.div
             className="absolute left-5 right-5 bottom-20 z-10 lg:bottom-[120px] lg:left-[382px] lg:right-[80px]"
             initial={{ opacity: 0, y: 50 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1, delay: 0.3 }}
           >
-            <motion.h1 
+            <motion.h1
               className="text-ag-light font-space text-[32px] lg:text-[64px] font-bold leading-[42px] lg:leading-[70px] text-right drop-shadow-lg"
               whileHover={{ scale: 1.02 }}
             >
@@ -256,7 +264,10 @@ export default function Index() {
               animate={{ x: 0, opacity: 1 }}
               transition={{ duration: 1, delay: 1 }}
             >
-              <path d="M56 0L121 41V192H0L56 0Z" fill="hsl(var(--ag-bright-blue))" />
+              <path
+                d="M56 0L121 41V192H0L56 0Z"
+                fill="hsl(var(--ag-bright-blue))"
+              />
             </motion.svg>
           </div>
 
@@ -269,9 +280,9 @@ export default function Index() {
             animate={{ pathLength: 1 }}
             transition={{ duration: 2, delay: 1.2 }}
           >
-            <motion.path 
-              d="M39 1L1 68.1376V245" 
-              stroke="#FF004F" 
+            <motion.path
+              d="M39 1L1 68.1376V245"
+              stroke="#FF004F"
               strokeWidth="1"
               initial={{ pathLength: 0 }}
               animate={{ pathLength: 1 }}
@@ -281,13 +292,13 @@ export default function Index() {
         </div>
 
         {/* Subtitle Section */}
-        <motion.div 
+        <motion.div
           className="relative bg-gradient-to-r from-ag-dark-teal to-ag-bright-blue px-6 py-6 lg:px-8 lg:py-12"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 0.8, delay: 0.5 }}
         >
-          <motion.p 
+          <motion.p
             className="text-ag-light font-space text-base lg:text-[28px] leading-6 lg:leading-9 text-center max-w-[246px] lg:max-w-[853px] mx-auto"
             variants={fadeInUp}
             initial="initial"
@@ -301,7 +312,7 @@ export default function Index() {
       </header>
 
       {/* Our Vision Section */}
-      <motion.section 
+      <motion.section
         className="py-12 lg:py-24"
         variants={staggerContainer}
         initial="initial"
@@ -309,13 +320,13 @@ export default function Index() {
         viewport={{ once: true }}
       >
         <div className="px-4 lg:container lg:mx-auto text-center">
-          <motion.h2 
+          <motion.h2
             className="font-space text-[28px] lg:text-[36px] font-semibold leading-9 lg:leading-[44px] text-black mb-4"
             variants={fadeInUp}
           >
             Our vision for Lotto
           </motion.h2>
-          <motion.p 
+          <motion.p
             className="font-ibm text-base lg:text-lg leading-6 lg:leading-7 text-black max-w-[266px] lg:max-w-[332px] mx-auto"
             variants={fadeInUp}
           >
@@ -325,7 +336,7 @@ export default function Index() {
       </motion.section>
 
       {/* Three Pillars - Responsive Layout */}
-      <motion.section 
+      <motion.section
         className="px-4 lg:px-8 mb-16"
         variants={staggerContainer}
         initial="initial"
@@ -335,7 +346,7 @@ export default function Index() {
         <div className="lg:container lg:mx-auto">
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 lg:gap-12 max-w-[1217px] mx-auto">
             {/* Sport & Swagger */}
-            <motion.div 
+            <motion.div
               className="relative group"
               variants={fadeInLeft}
               {...scaleOnHover}
@@ -347,7 +358,7 @@ export default function Index() {
                   className="w-full h-[378px] lg:h-[453px] object-cover transition-transform duration-700 group-hover:scale-110"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent" />
-                <motion.div 
+                <motion.div
                   className="absolute bottom-6 left-1/2 transform -translate-x-1/2 text-center px-4"
                   initial={{ opacity: 0, y: 20 }}
                   whileInView={{ opacity: 1, y: 0 }}
@@ -364,7 +375,7 @@ export default function Index() {
             </motion.div>
 
             {/* Culture in Motion */}
-            <motion.div 
+            <motion.div
               className="relative group"
               variants={fadeInUp}
               {...scaleOnHover}
@@ -376,7 +387,7 @@ export default function Index() {
                   className="w-full h-[378px] lg:h-[453px] object-cover transition-transform duration-700 group-hover:scale-110"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent" />
-                <motion.div 
+                <motion.div
                   className="absolute bottom-6 left-1/2 transform -translate-x-1/2 text-center px-4"
                   initial={{ opacity: 0, y: 20 }}
                   whileInView={{ opacity: 1, y: 0 }}
@@ -394,7 +405,7 @@ export default function Index() {
             </motion.div>
 
             {/* Live in Motion */}
-            <motion.div 
+            <motion.div
               className="relative group"
               variants={fadeInRight}
               {...scaleOnHover}
@@ -406,7 +417,7 @@ export default function Index() {
                   className="w-full h-[378px] lg:h-[453px] object-cover transition-transform duration-700 group-hover:scale-110"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent" />
-                <motion.div 
+                <motion.div
                   className="absolute bottom-6 left-1/2 transform -translate-x-1/2 text-center px-4"
                   initial={{ opacity: 0, y: 20 }}
                   whileInView={{ opacity: 1, y: 0 }}
@@ -426,7 +437,7 @@ export default function Index() {
       </motion.section>
 
       {/* Agilitas Quote Section */}
-      <motion.section 
+      <motion.section
         className="bg-ag-dark py-16 lg:py-20 relative"
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
@@ -435,7 +446,7 @@ export default function Index() {
       >
         <div className="container mx-auto px-4 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-stretch">
-            <motion.div 
+            <motion.div
               className="flex items-center justify-center lg:justify-start"
               variants={fadeInLeft}
               initial="initial"
@@ -450,7 +461,7 @@ export default function Index() {
             </motion.div>
 
             {/* Product Images Grid - Desktop */}
-            <motion.div 
+            <motion.div
               className="hidden lg:grid grid-cols-2 gap-4 h-[552px]"
               variants={staggerContainer}
               initial="initial"
@@ -503,9 +514,9 @@ export default function Index() {
           viewport={{ once: true }}
           transition={{ duration: 2 }}
         >
-          <motion.path 
-            d="M1 1L105 140.513V420.487" 
-            stroke="#1D1BFB" 
+          <motion.path
+            d="M1 1L105 140.513V420.487"
+            stroke="#1D1BFB"
             strokeWidth="2"
             initial={{ pathLength: 0 }}
             animate={{ pathLength: 1 }}
@@ -515,7 +526,7 @@ export default function Index() {
       </motion.section>
 
       {/* Mobile Product Grid */}
-      <motion.section 
+      <motion.section
         className="px-0 lg:hidden"
         variants={staggerContainer}
         initial="initial"
@@ -537,10 +548,7 @@ export default function Index() {
             variants={fadeInRight}
             whileHover={{ scale: 1.05 }}
           />
-          <motion.div 
-            className="col-span-2 relative -ml-4"
-            variants={fadeInUp}
-          >
+          <motion.div className="col-span-2 relative -ml-4" variants={fadeInUp}>
             <img
               src="https://api.builder.io/api/v1/image/assets/TEMP/0dcfa37f6603bcf7ed8892da400ff1d88f4f4f45?width=907"
               alt="Product 3"
@@ -551,14 +559,14 @@ export default function Index() {
       </motion.section>
 
       {/* Coming Soon Section */}
-      <motion.section 
+      <motion.section
         className="py-16 px-4 lg:px-8"
         variants={staggerContainer}
         initial="initial"
         whileInView="animate"
         viewport={{ once: true }}
       >
-        <motion.h2 
+        <motion.h2
           className="font-space text-[28px] lg:text-[36px] font-semibold leading-9 lg:leading-[44px] text-black text-center mb-12"
           variants={fadeInUp}
         >
@@ -567,7 +575,7 @@ export default function Index() {
 
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 max-w-[1273px] mx-auto">
           {/* Run Club Meetup */}
-          <motion.div 
+          <motion.div
             className="relative rounded-lg overflow-hidden group"
             variants={fadeInLeft}
             {...scaleOnHover}
@@ -591,7 +599,7 @@ export default function Index() {
           </motion.div>
 
           {/* Custom Kicks Day */}
-          <motion.div 
+          <motion.div
             className="relative rounded-lg overflow-hidden group"
             variants={fadeInUp}
             {...scaleOnHover}
@@ -614,7 +622,7 @@ export default function Index() {
           </motion.div>
 
           {/* Football Weekend - Desktop Only */}
-          <motion.div 
+          <motion.div
             className="relative rounded-lg overflow-hidden group hidden lg:block"
             variants={fadeInRight}
             {...scaleOnHover}
@@ -640,7 +648,7 @@ export default function Index() {
       </motion.section>
 
       {/* Join the Movement Section */}
-      <motion.section 
+      <motion.section
         className="py-16 px-4 lg:px-8"
         variants={staggerContainer}
         initial="initial"
@@ -648,13 +656,13 @@ export default function Index() {
         viewport={{ once: true }}
       >
         <div className="text-center mb-12">
-          <motion.h2 
+          <motion.h2
             className="font-space text-[28px] lg:text-[36px] font-semibold leading-9 lg:leading-[44px] text-black mb-4"
             variants={fadeInUp}
           >
             Join the movement
           </motion.h2>
-          <motion.p 
+          <motion.p
             className="font-ibm text-lg leading-7 text-black max-w-[341px] mx-auto"
             variants={fadeInUp}
           >
@@ -664,7 +672,7 @@ export default function Index() {
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 max-w-[1274px] mx-auto">
           {/* Discover Where You Fit In */}
-          <motion.div 
+          <motion.div
             className="relative rounded-lg overflow-hidden group"
             variants={fadeInLeft}
             {...scaleOnHover}
@@ -675,7 +683,7 @@ export default function Index() {
               className="w-full h-[216px] lg:h-[368px] object-cover transition-transform duration-700 group-hover:scale-110"
             />
             <div className="absolute inset-0 flex items-center justify-center">
-              <motion.div 
+              <motion.div
                 className="bg-black/60 backdrop-blur-sm px-6 py-4 rounded"
                 whileHover={{ scale: 1.05, bg: "rgba(0,0,0,0.7)" }}
               >
@@ -687,7 +695,7 @@ export default function Index() {
           </motion.div>
 
           {/* Vibe with Creators */}
-          <motion.div 
+          <motion.div
             className="relative rounded-lg overflow-hidden group"
             variants={fadeInRight}
             {...scaleOnHover}
@@ -698,7 +706,7 @@ export default function Index() {
               className="w-full h-[216px] lg:h-[368px] object-cover transition-transform duration-700 group-hover:scale-110"
             />
             <div className="absolute inset-0 flex items-center justify-center">
-              <motion.div 
+              <motion.div
                 className="bg-black/60 backdrop-blur-sm px-6 py-4 rounded"
                 whileHover={{ scale: 1.05, bg: "rgba(0,0,0,0.7)" }}
               >
@@ -712,7 +720,7 @@ export default function Index() {
       </motion.section>
 
       {/* Explore Lotto Section */}
-      <motion.section 
+      <motion.section
         className="bg-ag-dark-teal py-16 mx-4 lg:mx-0 rounded-lg lg:rounded-none mb-16 lg:mb-0"
         initial={{ opacity: 0, y: 50 }}
         whileInView={{ opacity: 1, y: 0 }}
@@ -720,7 +728,7 @@ export default function Index() {
         transition={{ duration: 0.8 }}
       >
         <div className="px-4 text-center">
-          <motion.h2 
+          <motion.h2
             className="font-space text-[28px] lg:text-[36px] font-semibold leading-9 lg:leading-[44px] text-ag-bright-pink mb-4"
             whileHover={{ scale: 1.05 }}
           >
@@ -746,7 +754,7 @@ export default function Index() {
       </motion.section>
 
       {/* Footer */}
-      <motion.footer 
+      <motion.footer
         className="bg-ag-dark text-ag-light"
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
@@ -754,7 +762,7 @@ export default function Index() {
         transition={{ duration: 0.8 }}
       >
         <div className="px-4 lg:px-8 py-12 lg:py-16">
-          <motion.div 
+          <motion.div
             className="container mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8"
             variants={staggerContainer}
             initial="initial"
@@ -762,30 +770,30 @@ export default function Index() {
             viewport={{ once: true }}
           >
             {/* Logo and Description */}
-            <motion.div 
+            <motion.div
               className="sm:col-span-2 lg:col-span-1"
               variants={fadeInUp}
             >
-              <motion.div 
+              <motion.div
                 className="flex items-center mb-6 lg:mb-8"
                 whileHover={{ scale: 1.05 }}
               >
-                <motion.div 
+                <motion.div
                   className="w-2 h-2 lg:w-4 lg:h-4 bg-ag-lemon-green rounded-full mr-2 lg:mr-3"
                   animate={{ scale: [1, 1.2, 1] }}
                   transition={{ duration: 2, repeat: Infinity, delay: 0 }}
                 />
-                <motion.div 
+                <motion.div
                   className="w-2 h-2 lg:w-4 lg:h-4 bg-ag-bright-blue rounded-full mr-2 lg:mr-3"
                   animate={{ scale: [1, 1.2, 1] }}
                   transition={{ duration: 2, repeat: Infinity, delay: 0.5 }}
                 />
-                <motion.div 
+                <motion.div
                   className="w-2 h-2 lg:w-4 lg:h-4 bg-ag-bright-pink rounded-full mr-2 lg:mr-3"
                   animate={{ scale: [1, 1.2, 1] }}
                   transition={{ duration: 2, repeat: Infinity, delay: 1 }}
                 />
-                <motion.div 
+                <motion.div
                   className="w-2 h-2 lg:w-4 lg:h-4 bg-orange-500 rounded-full"
                   animate={{ scale: [1, 1.2, 1] }}
                   transition={{ duration: 2, repeat: Infinity, delay: 1.5 }}
@@ -793,8 +801,8 @@ export default function Index() {
               </motion.div>
               <div className="w-[112px] lg:w-[163px] h-[30px] lg:h-[44px] bg-gray-600 rounded mb-6 lg:mb-8" />
               <p className="font-ibm text-lg lg:text-xl leading-7 lg:leading-8 mb-6 lg:mb-8">
-                Comprehensively building the entire value chain from manufacturing
-                to retail
+                Comprehensively building the entire value chain from
+                manufacturing to retail
               </p>
 
               <div className="mb-6">
@@ -818,22 +826,22 @@ export default function Index() {
             {/* Links Column 1 */}
             <motion.div variants={fadeInUp}>
               <div className="space-y-3 lg:space-y-4 font-ibm text-lg lg:text-xl leading-7 lg:leading-8">
-                <motion.a 
-                  href="#" 
+                <motion.a
+                  href="#"
                   className="block hover:text-white transition-colors"
                   whileHover={{ x: 5 }}
                 >
                   About Us
                 </motion.a>
-                <motion.a 
-                  href="#" 
+                <motion.a
+                  href="#"
                   className="block hover:text-white transition-colors"
                   whileHover={{ x: 5 }}
                 >
                   What we do
                 </motion.a>
-                <motion.a 
-                  href="#" 
+                <motion.a
+                  href="#"
                   className="block hover:text-white transition-colors"
                   whileHover={{ x: 5 }}
                 >
@@ -845,15 +853,15 @@ export default function Index() {
             {/* Links Column 2 */}
             <motion.div variants={fadeInUp}>
               <div className="space-y-3 lg:space-y-4 font-ibm leading-6 lg:leading-7">
-                <motion.a 
-                  href="#" 
+                <motion.a
+                  href="#"
                   className="block text-lg lg:text-xl hover:text-white transition-colors"
                   whileHover={{ x: 5 }}
                 >
                   Join the Team
                 </motion.a>
-                <motion.a 
-                  href="#" 
+                <motion.a
+                  href="#"
                   className="block text-lg lg:text-xl hover:text-white transition-colors"
                   whileHover={{ x: 5 }}
                 >
@@ -867,7 +875,7 @@ export default function Index() {
             </motion.div>
 
             {/* Contact */}
-            <motion.div 
+            <motion.div
               className="sm:col-span-2 lg:col-span-1"
               variants={fadeInUp}
             >
@@ -925,7 +933,7 @@ export default function Index() {
         </div>
 
         {/* Copyright */}
-        <motion.div 
+        <motion.div
           className="bg-white py-4 lg:py-6"
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
