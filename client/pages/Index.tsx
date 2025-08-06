@@ -93,85 +93,89 @@ export default function Index() {
           </div>
         </motion.div>
 
-        {/* Desktop Navigation */}
-        <motion.nav 
-          className="hidden lg:flex relative z-10 items-center justify-between px-8 xl:px-[189px] pt-6"
+        {/* Desktop Navigation - Glassmorphic Bar */}
+        <motion.nav
+          className="hidden lg:block absolute top-0 left-0 right-0 z-20 px-8 xl:px-[189px] pt-6"
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
         >
-          <motion.div 
-            className="flex items-center"
-            whileHover={{ scale: 1.05 }}
-          >
-            <img
-              src="https://api.builder.io/api/v1/image/assets/TEMP/8d2f8c109be081342057899cba56d101a3d7fb0c?width=316"
-              alt="Agilitas Logo"
-              className="h-[52px] w-[158px]"
-            />
-            <motion.div 
-              className="w-1.5 h-1.5 bg-ag-lemon-green rounded-full ml-2"
-              animate={{ scale: [1, 1.3, 1] }}
-              transition={{ duration: 2, repeat: Infinity }}
-            />
-          </motion.div>
-
-          <motion.div 
-            className="flex items-center space-x-8 text-ag-light font-space text-xl"
-            variants={staggerContainer}
-            initial="initial"
-            animate="animate"
-          >
-            <motion.a 
-              href="#" 
-              className="hover:text-white transition-colors"
-              variants={fadeInUp}
-              whileHover={{ y: -2 }}
-            >
-              About us
-            </motion.a>
-            <motion.div 
-              className="flex items-center space-x-1"
-              variants={fadeInUp}
-            >
-              <motion.a
-                href="#"
-                className="font-bold hover:text-white transition-colors"
-                whileHover={{ y: -2 }}
+          <div className="bg-black/40 backdrop-blur-[35px] rounded-lg border border-white/10 px-6 py-4">
+            <div className="flex items-center justify-between">
+              <motion.div
+                className="flex items-center"
+                whileHover={{ scale: 1.05 }}
               >
-                What we do
-              </motion.a>
-              <ChevronDown className="w-3 h-3" />
-              <motion.div 
-                className="w-[30px] h-1 bg-ag-lemon-green transform skew-x-12"
-                whileHover={{ scaleX: 1.2 }}
-              />
-            </motion.div>
-            <motion.a 
-              href="#" 
-              className="hover:text-white transition-colors"
-              variants={fadeInUp}
-              whileHover={{ y: -2 }}
-            >
-              Inside Agilitas
-            </motion.a>
-            <motion.a 
-              href="#" 
-              className="hover:text-white transition-colors"
-              variants={fadeInUp}
-              whileHover={{ y: -2 }}
-            >
-              Join the team
-            </motion.a>
-            <motion.a 
-              href="#" 
-              className="hover:text-white transition-colors"
-              variants={fadeInUp}
-              whileHover={{ y: -2 }}
-            >
-              Media
-            </motion.a>
-          </motion.div>
+                <img
+                  src="https://api.builder.io/api/v1/image/assets/TEMP/8d2f8c109be081342057899cba56d101a3d7fb0c?width=316"
+                  alt="Agilitas Logo"
+                  className="h-[52px] w-[158px]"
+                />
+                <motion.div
+                  className="w-1.5 h-1.5 bg-ag-lemon-green rounded-full ml-2"
+                  animate={{ scale: [1, 1.3, 1] }}
+                  transition={{ duration: 2, repeat: Infinity }}
+                />
+              </motion.div>
+
+              <motion.div
+                className="flex items-center space-x-8 text-ag-light font-space text-xl"
+                variants={staggerContainer}
+                initial="initial"
+                animate="animate"
+              >
+                <motion.a
+                  href="#"
+                  className="hover:text-white transition-colors"
+                  variants={fadeInUp}
+                  whileHover={{ y: -2 }}
+                >
+                  About us
+                </motion.a>
+                <motion.div
+                  className="flex items-center space-x-1"
+                  variants={fadeInUp}
+                >
+                  <motion.a
+                    href="#"
+                    className="font-bold hover:text-white transition-colors"
+                    whileHover={{ y: -2 }}
+                  >
+                    What we do
+                  </motion.a>
+                  <ChevronDown className="w-3 h-3" />
+                  <motion.div
+                    className="w-[30px] h-1 bg-ag-lemon-green transform skew-x-12"
+                    whileHover={{ scaleX: 1.2 }}
+                  />
+                </motion.div>
+                <motion.a
+                  href="#"
+                  className="hover:text-white transition-colors"
+                  variants={fadeInUp}
+                  whileHover={{ y: -2 }}
+                >
+                  Inside Agilitas
+                </motion.a>
+                <motion.a
+                  href="#"
+                  className="hover:text-white transition-colors"
+                  variants={fadeInUp}
+                  whileHover={{ y: -2 }}
+                >
+                  Join the team
+                </motion.a>
+                <motion.a
+                  href="#"
+                  className="hover:text-white transition-colors"
+                  variants={fadeInUp}
+                  whileHover={{ y: -2 }}
+                >
+                  Media
+                </motion.a>
+              </motion.div>
+            </div>
+          </div>
         </motion.nav>
 
         {/* Hero Section - Responsive */}
