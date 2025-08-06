@@ -28,17 +28,24 @@ export default function Index() {
             </div>
 
             {/* Navigation Links */}
-            <div className="hidden lg:flex items-center space-x-8 text-ag-light font-space text-xl">
-              <a href="#" className="hover:text-white transition-colors">About us</a>
-              <div className="flex items-center space-x-1">
-                <a href="#" className="font-bold hover:text-white transition-colors">What we do</a>
-                <ChevronDown className="w-3 h-3" />
-                <div className="w-[30px] h-1 bg-ag-lemon-green transform skew-x-12" />
-              </div>
-              <a href="#" className="hover:text-white transition-colors">Inside Agilitas</a>
-              <a href="#" className="hover:text-white transition-colors">Join the team</a>
-              <a href="#" className="hover:text-white transition-colors">Media</a>
+          <div className="hidden lg:flex items-center space-x-8 text-ag-light font-space text-xl">
+            <a href="#" className="hover:text-white transition-colors">About us</a>
+            <div className="flex items-center space-x-1">
+              <a href="#" className="font-bold hover:text-white transition-colors">What we do</a>
+              <ChevronDown className="w-3 h-3" />
+              <div className="w-[30px] h-1 bg-ag-lemon-green transform skew-x-12" />
             </div>
+            <a href="#" className="hover:text-white transition-colors">Inside Agilitas</a>
+            <a href="#" className="hover:text-white transition-colors">Join the team</a>
+            <a href="#" className="hover:text-white transition-colors">Media</a>
+          </div>
+
+          {/* Mobile Menu Button */}
+          <button className="lg:hidden text-ag-light p-2">
+            <div className="w-6 h-0.5 bg-ag-light mb-1"></div>
+            <div className="w-6 h-0.5 bg-ag-light mb-1"></div>
+            <div className="w-6 h-0.5 bg-ag-light"></div>
+          </button>
           </nav>
 
           {/* Hero Content */}
