@@ -88,8 +88,8 @@ export default function Index() {
 
         {/* Subtitle section */}
         <div className="relative bg-gradient-to-r from-ag-dark-teal to-ag-bright-blue">
-          <div className="container mx-auto px-4 sm:px-8 lg:px-[459px] py-8">
-            <p className="text-ag-light font-space text-2xl sm:text-[28px] leading-9 text-center max-w-[853px]">
+          <div className="container mx-auto px-4 sm:px-8 py-8 lg:py-12">
+            <p className="text-ag-light font-space text-xl sm:text-2xl lg:text-[28px] leading-8 sm:leading-9 text-center max-w-[853px] mx-auto">
               Lotto is stepping into its new era with Agilitas as its compass. A journey that is familiar, reborn with a new purpose.
             </p>
           </div>
@@ -412,7 +412,7 @@ export default function Index() {
                   Lakshminarayana Pura,<br />
                   EPIP Zone, Chinnapanna Halli,<br />
                   Bengaluru, Karnataka 560037<br /><br />
-                  ���� <a href="#" className="underline hover:text-white transition-colors">Get directions</a>
+                  🧭 <a href="#" className="underline hover:text-white transition-colors">Get directions</a>
                 </address>
               </div>
             </div>
